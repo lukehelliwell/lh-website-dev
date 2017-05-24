@@ -1,0 +1,116 @@
+/*////////// KEYFRAMES //////////*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*////////// CSS PAGE TRANSITIONS ////////// */
+
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+.m-scene .scene_element--delayed {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+/* Stagger homepage module load */
+.m-scene .scene_element--delayed#one {
+  -webkit-animation-delay: 0.04s;
+  animation-delay: 0.04s; }
+
+.m-scene .scene_element--delayed#two {
+  -webkit-animation-delay: 0.08s;
+  animation-delay: 0.08s; }
+
+.m-scene .scene_element--delayed#three {
+  -webkit-animation-delay: 0.12s;
+  animation-delay: 0.12s; }
+
+.m-scene .scene_element--delayed#four {
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s; }
+
+.m-scene .scene_element--delayed#ICone {
+  -webkit-animation-delay: 0.20s;
+  animation-delay: 0.20s; }
+
+.m-scene .scene_element--delayed#ICtwo {
+  -webkit-animation-delay: 0.24s;
+  animation-delay: 0.24; }
+
+.m-scene .scene_element--delayed#ICthree {
+  -webkit-animation-delay: 0.28s;
+  animation-delay: 0.28s; }
+
+.m-scene .scene_element--delayed#ICfour {
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s; }
+
+.m-scene .scene_element--delayed#five {
+  -webkit-animation-delay: 0.36s;
+  animation-delay: 0.36s; }
+
+.m-scene .scene_element--delayed#six {
+  -webkit-animation-delay: 0.40s;
+  animation-delay: 0.40s; }
+
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+
+.m-scene.is-exiting .scene_element--delayed {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.m-scene.is-exiting .scene_element--noexiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }

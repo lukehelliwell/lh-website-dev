@@ -1,0 +1,23 @@
+h1, h2, p, a {
+    font-family: Heimat Sans DEMO, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 32px;
+  color: #1b1b1b;
+}
+
+h2.label {
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}

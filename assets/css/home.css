@@ -1,0 +1,218 @@
+.home-wrapper {
+  background-color: #f5f5f5;
+  padding: 24px;
+}
+
+.button {
+  cursor:pointer;"
+}
+
+html, body, div, span, applet, object, iframe,
+h1, /*h2,*/ h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  outline: none;
+}
+
+html, body {
+  background: #fff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+article {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+article h3 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  padding-top: 72px;
+  padding-bottom: 55px;
+  color: #b7b7b7;
+}
+article h3.seperator {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/*////////// HEADER //////////*/
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+#links {
+  float: right;
+  margin-top: -79px;
+}
+
+.project-wrapper #links {
+    float: none;
+    margin-top: 0px;
+    background-color: #f5f5f5;
+    padding: 25px 24px 10px 10px;
+    text-align: right;
+}
+
+
+/*////////// MEDIA QUERIES //////////*/
+
+@media screen and (min-width: 900px) {
+  body {
+    padding: 40px;
+    padding-top: 32px;
+  }
+  header .center h1 {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cellWrapper {
+    width: 100%;
+  }
+
+  .innerCellWrapper {
+    width: 100%;
+  }
+}
+
+.projectCTA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cellWrapper:before {
+  content: '';
+  display: block;
+  padding-bottom: 75%;
+  height: 0;
+  box-sizing: border-box;
+}
+
+.cellWrapper {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.innerCellWrapper:before {
+  content: '';
+  display: block;
+  padding-bottom: 75%;
+  height: 0;
+  box-sizing: border-box;
+}
+
+.innerCellWrapper {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.cellWrapper.cellContainer:before {
+  padding-bottom: 0%;
+}
+
+
+
+/*////////// BACKGROUND IMAGES //////////*/
+
+#one {
+  background-image : url("images/1.jpg");
+  background-size: 100%;
+}
+
+#two {
+  background-image : url("images/2.jpg");
+  background-size: 100%;
+}
+
+#three {
+  background-image : url("images/3.jpg");
+  background-size: 100%;
+}
+
+/* #four {
+  background-image : url("images/4.jpg");
+  background-size: 100%;
+} */
+
+#five {
+  background-image : url("images/8.jpg");
+  background-size: 100%;
+}
+
+#six {
+  background-image : url("images/9.jpg");
+  background-size: 100%;
+}
+
+#ICone {
+  background-image : url("images/4.jpg");
+  background-size: 100%;
+} 
+
+#ICtwo {
+  background-image : url("images/5.jpg");
+  background-size: 100%;
+} 
+
+#ICthree {
+  background-image : url("images/6.jpg");
+  background-size: 100%;
+} 
+
+#ICfour {
+  background-image : url("images/7.jpg");
+  background-size: 100%;
+} 
