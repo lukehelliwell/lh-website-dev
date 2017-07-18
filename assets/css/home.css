@@ -164,55 +164,34 @@ header {
 }
 
 
-
 /*////////// BACKGROUND IMAGES //////////*/
 
 #one {
-  background-image : url("images/1.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
 #two {
-  background-image : url("images/2.jpg");
+  background-image : url("../../images/2.jpg");
   background-size: 100%;
 }
 
 #three {
-  background-image : url("images/3.jpg");
+  background-image : url("../../images/3.jpg");
   background-size: 100%;
 }
 
-/* #four {
-  background-image : url("images/4.jpg");
+#four {
+  background-image : url("../../images/4.jpg");
   background-size: 100%;
-} */
+} 
 
 #five {
-  background-image : url("images/8.jpg");
+  background-image : url("../../images/8.jpg");
   background-size: 100%;
 }
 
 #six {
-  background-image : url("images/9.jpg");
+  background-image : url("../../images/9.jpg");
   background-size: 100%;
 }
-
-#ICone {
-  background-image : url("images/4.jpg");
-  background-size: 100%;
-} 
-
-#ICtwo {
-  background-image : url("images/5.jpg");
-  background-size: 100%;
-} 
-
-#ICthree {
-  background-image : url("images/6.jpg");
-  background-size: 100%;
-} 
-
-#ICfour {
-  background-image : url("images/7.jpg");
-  background-size: 100%;
-} 

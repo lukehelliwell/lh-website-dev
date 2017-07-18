@@ -1,5 +1,6 @@
-h1, h2, p, a {
-    font-family: Heimat Sans DEMO, Helvetica, Arial, sans-serif;
+h1, h2, p, a, .button {
+  font-family: Heimat Sans DEMO, Helvetica, Arial, sans-serif;
+  color: #1b1b1b;
 }
 
 a {
@@ -10,7 +11,6 @@ header h1 {
   font-weight: bold;
   font-size: 48px;
   padding-bottom: 32px;
-  color: #1b1b1b;
 }
 
 h2.label {
