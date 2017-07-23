@@ -123,7 +123,7 @@ header {
   }
 }
 
-.projectCTA {
+.project-promo {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,6 +143,7 @@ header {
   position: relative;
   float: left;
   width: 50%;
+  overflow: hidden;
 }
 
 .innerCellWrapper:before {
@@ -170,44 +171,6 @@ header {
     top: 0;
 }
 
-/*////////// Rollover animation //////////*/
-
-
-.effect-duke {
-  background: -webkit-linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
-  background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
-}
-
-.effect-duke .projectCTA {
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  opacity: 0.5;
-
-}
-
-.effect-duke h2  {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  -webkit-transform: scale3d(0.8,0.8,1);
-  transform: scale3d(0.8,0.8,1);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-}
-.effect-duke .label{
-  pointer-events: none;
-}
-
-.effect-duke:hover .projectCTA   {
-  opacity: 0.1;
-}
-
-
-.effect-duke:hover h2  {
-  opacity: 1;
-  -webkit-transform: scale3d(1,1,1);
-  transform: scale3d(1,1,1);
-}
-
 
 /*////////// BACKGROUND IMAGES //////////*/
 
@@ -217,26 +180,26 @@ header {
 }
 
 #two {
-  background-image : url("../../images/2.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
 #three {
-  background-image : url("../../images/3.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
 #four {
-  background-image : url("../../images/4.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 } 
 
 #five {
-  background-image : url("../../images/8.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
 #six {
-  background-image : url("../../images/9.jpg");
+  background-image : url("../../images/1.jpg");
   background-size: 100%;
 }

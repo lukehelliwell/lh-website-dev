@@ -1,3 +1,48 @@
+/*////////// Rollover animation //////////*/
+
+
+.project-animation {
+  background: -webkit-linear-gradient(-45deg, #000000 0%,#222222 100%);
+  background: linear-gradient(-45deg, #000000 0%,#222222 100%);
+}
+
+.project-animation .project-promo {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+  opacity: 1;
+
+}
+
+.project-animation h2  {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+  opacity: 0;
+}
+
+.project-animation .label{
+  pointer-events: none;
+}
+
+.project-animation:hover .project-promo   {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2,1.2,1);
+  transform: scale3d(1.1,1.1,1);
+}
+
+
+.project-animation:hover h2  {
+  opacity: 1;
+  -webkit-transform: scale3d(1.5,1.5,1);
+  transform: scale3d(1.5,1.5,1);
+}
+
+
 /*////////// KEYFRAMES //////////*/
 
 @keyframes fadeIn {
