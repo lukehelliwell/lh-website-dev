@@ -17,7 +17,7 @@
 
 }
 
-.project-animation h2  {
+.project-animation .label  {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   -webkit-transform: scale3d(1,1,1);
@@ -31,15 +31,15 @@
 
 .project-animation:hover .project-promo   {
   opacity: 0.5;
-  -webkit-transform: scale3d(1.2,1.2,1);
-  transform: scale3d(1.1,1.1,1);
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
 }
 
 
-.project-animation:hover h2  {
+.project-animation :hover .label {
   opacity: 1;
-  -webkit-transform: scale3d(1.5,1.5,1);
-  transform: scale3d(1.5,1.5,1);
+  -webkit-transform: scale3d(1.6,1.6,1);
+  transform: scale3d(1.6,1.6,1);
 }
 
 
