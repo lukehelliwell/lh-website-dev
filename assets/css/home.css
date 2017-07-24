@@ -193,32 +193,32 @@ header {
 
 /*////////// BACKGROUND IMAGES //////////*/
 
-#one {
+.project-promo#one {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
-#two {
+.project-promo#two {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
-#three {
+.project-promo#three {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
-#four {
+.project-promo#four {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 } 
 
-#five {
+.project-promo#five {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
 
-#six {
+.project-promo#six {
   background-image : url("../../images/1.jpg");
   background-size: 100%;
 }
