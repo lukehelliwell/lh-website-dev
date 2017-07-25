@@ -25,7 +25,7 @@
 
     projectButton.click(function () { 
         Nav.addClass('overlay-closing');
-        Nav.removeClass('overlay-open');
+        Nav.removeClass('overlay-open'); console.log ('hello');
         Nav.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
             function(e) {
             Nav.removeClass('overlay-closing');
