@@ -19,13 +19,13 @@
         Nav.removeClass('overlay-open');
         Nav.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
             function(e) {
-            Nav.removeClass('overlay-closing');
+            Nav.removeClass('overlay-closing'); console.log ('hello');
         });
     });
 
     projectButton.click(function () { 
         Nav.addClass('overlay-closing');
-        Nav.removeClass('overlay-open'); console.log ('hello');
+        Nav.removeClass('overlay-open'); 
         Nav.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
             function(e) {
             Nav.removeClass('overlay-closing');
