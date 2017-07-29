@@ -1,0 +1,92 @@
+.cellWrapper#project-one .project-logo,
+.cellWrapper#project-two .project-logo,
+.cellWrapper#project-three .project-logo,
+.cellWrapper#project-four .project-logo,
+.cellWrapper#project-five .project-logo,
+.cellWrapper#project-six .project-logo {
+  position: absolute;
+  margin: 0 42.5% 0 42.5%;
+  top: 40%;
+  width: 15%;
+  height: 10%;
+  background: url(../../svgs/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ////////// GRADIENT IF REQUIRED //////////*/
+/*.project-animation {
+  background: -webkit-linear-gradient(-45deg, #000000 0%,#222222 100%);
+  background: linear-gradient(-45deg, #000000 0%,#222222 100%);
+}*/
+
+
+/*////////// PROJECT-ONE //////////*/
+
+#project-one .project-teaser-image  {
+  background-image : url("../../images/01.jpg");
+  background-size: 100%;
+}
+
+#project-one.project-animation {
+  background-color: #082861;
+}
+
+
+/*////////// PROJECT-TWO //////////*/
+
+#project-two .project-teaser-image {
+  background-image : url("../../images/02.jpg");
+  background-size: 100%;
+}
+
+#project-two.project-animation {
+  background-color: #d7b99d;
+}
+
+
+/*////////// PROJECT-THREE //////////*/
+
+#project-three .project-teaser-image {
+  background-image : url("../../images/03.jpg");
+  background-size: 100%;
+}
+
+#project-three.project-animation {
+  background-color: #fcd704;
+}
+
+/*////////// PROJECT-FOUR //////////*/
+
+#project-four .project-teaser-image {
+  background-image : url("../../images/04.jpg");
+  background-size: 100%;
+} 
+
+#project-four.project-animation {
+  background-color: #34729b;
+}
+
+
+/*////////// PROJECT-FIVE //////////*/
+
+#project-five .project-teaser-image  {
+  background-image : url("../../images/05.jpg");
+  background-size: 100%;
+}
+
+#project-five.project-animation {
+  background-color: #fa972f;
+}
+
+
+/*////////// PROJECT-SIX //////////*/
+
+#project-six .project-teaser-image  {
+  background-image : url("../../images/06.jpg");
+  background-size: 100%;
+}
+
+#project-six.project-animation {
+  background-color: #000000;
+}

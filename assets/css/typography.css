@@ -12,12 +12,3 @@ header h1 {
   font-size: 48px;
   padding-bottom: 32px;
 }
-
-h2.label {
-  font-size: 14px;
-  color: #fff;
-  position: absolute;
-  top: 45%;
-  text-align: center;
-  width: 100%;
-}

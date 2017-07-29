@@ -1,19 +1,52 @@
-/*////////// SETUP AND LAYOUT ////////// */
+/*////////// ANIMATION PROPERTIES ////////// */
 
 .overlay,
-.overlay .project-button,
 .overlay .menu-wrapper {
-    -webkit-transition: top 0.25s ccubic-bezier(0.05, 0.48, 0.46, 0.95), opacity 0.25s cubic-bezier(0.05, 0.79, 0.45, 0.95); /* Safari 3.1 to 6.0 */
-    transition: top 0.25s cubic-bezier(0.05, 0.79, 0.45, 0.95), opacity 0.25s cubic-bezier(0.05, 0.79, 0.45, 0.95);
+    -webkit-transition: top 0.2s ccubic-bezier(0.05, 0.48, 0.46, 0.95), opacity 0.2s cubic-bezier(0.05, 0.79, 0.45, 0.95); /* Safari 3.1 to 6.0 */
+    transition: top 0.2s cubic-bezier(0.05, 0.79, 0.45, 0.95), opacity 0.2s cubic-bezier(0.05, 0.79, 0.45, 0.95);
 }
+
+.overlay .project-button {
+    -webkit-transition: opacity 0.2s cubic-bezier(0.05, 0.79, 0.45, 0.95); /* Safari 3.1 to 6.0 */
+    transition: opacity 0.2s cubic-bezier(0.05, 0.79, 0.45, 0.95);
+}
+
+.overlay.overlay-open .project-button {
+animation: animation 1000ms linear both;
+}
+
+@keyframes animation {
+0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -200, 0, 1); }
+2.85% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -124.972, 0, 1); }
+4.1% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -99.26, 0, 1); }
+5.66% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -72.916, 0, 1); }
+8.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -42.102, 0, 1); }
+8.51% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -38.155, 0, 1); }
+11.31% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -17.33, 0, 1); }
+12.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -13.206, 0, 1); }
+14.16% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.428, 0, 1); }
+16.12% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.895, 0, 1); }
+16.97% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.429, 0, 1); }
+22.57% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 3.419, 0, 1); }
+27.23% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.676, 0, 1); }
+36.29% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.774, 0, 1); }
+38.34% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.525, 0, 1); }
+50% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+60.56% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+82.78% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+
+/*////////// LAYOUT ////////// */
 
 .overlay {
     width: 100%;
+    height: 100%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
-    height: 100%;
     overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -23,14 +56,12 @@
     width: 100%;
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
     opacity: 1;
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
-    /* margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 .overlay .project-button {
@@ -42,12 +73,11 @@
     display: block; /* Display block instead of inline */
 }
 
-/* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color ---- Add animation */
 .overlay a:hover, .overlay a:focus {
     color: #bbb;
 }
 
-/* Position the close button (top right corner) */
 .overlay .close-button {
     position: absolute;
     top: 20px;
@@ -59,15 +89,6 @@
     color: #fff;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
 
 /*////////// DEFAULT STATES OF ANIMATED PROPERTIES ////////// */
 
@@ -76,14 +97,11 @@
     opacity: 0;
 }
 
-.overlay .menu-wrapper {
+.overlay .menu-wrapper,
+.overlay .project-button {
     opacity: 0;
 }
 
-.overlay .project-button {
-    opacity: 0;
-    top: -300px;
-}
 
 /*////////// OPENING ////////// */
 
@@ -92,26 +110,24 @@
     opacity: 1;
 }
 
-.overlay.overlay-open .menu-wrapper {
-    opacity: 1;
-}
-
+.overlay.overlay-open .menu-wrapper,
 .overlay.overlay-open .overlay-content .project-button {
     opacity: 1;
-    top: 0px;
-
 }
 
 .overlay.overlay-open .overlay-content .project-button:nth-child(1) {
-    transition-delay: 0.40s;
+    animation-delay: 0.30s;
+    transition-delay: 0.30s;
 }
 
 .overlay.overlay-open .overlay-content .project-button:nth-child(2) {
-    transition-delay: 0.35s;
+    animation-delay: 0.25s;
+    transition-delay: 0.25s;
 }
 
 .overlay.overlay-open .overlay-content .project-button:nth-child(3) {
-    transition-delay: 0.30s;
+    animation-delay: 0.20s;
+    transition-delay: 0.20s;
 }
 
 
@@ -122,23 +138,7 @@
     opacity: 1;
 }
 
-.overlay.overlay-closing .menu-wrapper {
+.overlay.overlay-open .menu-wrapper,
+.overlay.overlay-open .overlay-content .project-button {
     opacity: 1;
-}
-
-.overlay.overlay-closing .overlay-content .project-button {
-    top: 0px;
-    opacity: 0;
-}
-
-.overlay.overlay-closing .overlay-content .project-button:nth-child(1) {
-    transition-delay: 0.05s;
-}
-
-.overlay.overlay-closing .overlay-content .project-button:nth-child(2) {
-    transition-delay: 0.1s;
-}
-
-.overlay.overlay-closing .overlay-content .project-button:nth-child(3) {
-    transition-delay: 0.15s;
 }

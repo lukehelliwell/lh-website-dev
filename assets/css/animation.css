@@ -1,23 +1,15 @@
 /*////////// Rollover animation //////////*/
 
-
-.project-animation {
-  background: -webkit-linear-gradient(-45deg, #000000 0%,#222222 100%);
-  background: linear-gradient(-45deg, #000000 0%,#222222 100%);
-}
-
-.project-animation .project-promo {
+.project-animation .project-teaser-image {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
   opacity: 1;
 
 }
 
-.project-animation .label  {
+.project-animation .project-logo  {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   -webkit-transform: scale3d(1,1,1);
@@ -25,25 +17,25 @@
   opacity: 0;
 }
 
-.project-animation .label{
+.project-animation .project-logo{
   pointer-events: none;
 }
 
-.project-animation:hover .project-promo   {
-  opacity: 0.5;
+.project-animation:hover .project-teaser-image   {
+  opacity: 0.35;
   -webkit-transform: scale3d(1.05,1.05,1);
   transform: scale3d(1.05,1.05,1);
 }
 
 
-.project-animation :hover .label {
+.project-animation :hover .project-logo {
   opacity: 1;
   -webkit-transform: scale3d(1.6,1.6,1);
   transform: scale3d(1.6,1.6,1);
 }
 
 
-/*////////// KEYFRAMES //////////*/
+/*////////// CSS PAGE TRANSITION KEYFRAMES //////////*/
 
 @keyframes fadeIn {
   0% {
